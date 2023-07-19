@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="Css/sty.css">
+    <link rel="icon" type="image/png" href="Assets/KBMI.png">
+    <script src="js/in.js"></script>
+</head>
+<body id="Kalkulator">
+  <h1>KALKULATOR BMI</h1>
+  <h3>Berat badan ideal adalah impian semua orang.
+    <br>Tidak hanya memiliki bentuk tubuh yang menunjang peanampilan,
+    berat badan yang ideal juga menandakan tubuh kita sehat
+    <br>Yuk, hitung sekarang di Kalkulator BMI.
+  </h3>
+  <section id="subKalkulator">
+    <form id="form">
+      <label for="nama">Nama :</label>
+      <input id="nama" type="text" name="nama" placeholder="Masukan Nama">
+
+      <label>jenis kelamin :</label>
+      <select>
+        <option value="laki-laki">laki-laki</option>
+        <option value="perempuan">perempuan</option>
+      </select>
+      <label for="umur">Umur :</label>
+      <input id="umur" type="number" name="umur"placeholder="Umur">
+
+      <label for="tinggi">Tinggi (cm):</label>
+      <input type="text" id="tinggi" name="tinggi" placeholder="Tinggi dalam cm">
+
+      <label for="berat">Berat (kg):</label>
+      <input type="text" id="berat" name="berat" placeholder="Berat dalam kg">
+
+      <button type="button" onclick="hitungBMI()">Hitung BMI</button>
+    </form>
+  </section>
+
+  <section id="ArticleKonsultasi">
+    <div>
+      <h1>Beberapa penyakit yang berasal dari obesitas</h1>
+      <h3>Diabetes</h3>
+      <h3>Hipertensi</h3>
+      <h3>Sakit jantung</h3>
+      <h3>Ostheoarthritis</h3>
+    </div>
+    <nav id="Konsultasi">
+      <button>Konsultasi via Applikasi</button>
+      <button onclick="redirectToForm()">Klik disini untuk cek BB mu!</button>
+    </nav>
+    <h3>BMI tidak sepenuhnya mewakili diagnosis dari kesehatan tubuh dan resiko penyakit dari seseorang.
+      <br>Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran anada terkait berat badan anda.
+    </h3>
+    <div id="img">
+      <img id="imgPly" src="Assets/ply1.webp" height="70px">
+      <img id="imgApple" src="Assets/apple.bmp" height="70px">
+    </div>
+  </section>
+
+  <section id="hasilBMI">
+    <div id="hasil"></div>
+    <div id="kategori"></div>
+  </section>
+</body>
+</html>
